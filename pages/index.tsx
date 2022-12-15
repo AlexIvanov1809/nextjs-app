@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import Button from '../components/button/Button';
 import  Htag  from '../components/Htag/Htag'
 import Rating from '../components/Rating/Rating';
+import  { withLayout }  from '../layout/Layout';
 
 
-export default function Home() {
+function Home() {
 	const [rating, setRating] = useState(3);
   return (
     <>
@@ -15,3 +16,5 @@ export default function Home() {
     </>
   )
 }
+
+export default withLayout(Home)
