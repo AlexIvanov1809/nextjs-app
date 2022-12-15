@@ -20,7 +20,7 @@ const Rating = ({isEditable = false, rating, setRating, className, ...props}: Ra
 			})
 
 			return (
-				<span className={style}
+				<span key={i} className={style}
 				onMouseEnter={() => changeDisplay(i + 1)}
 				onMouseLeave={() => changeDisplay(rating)}
 				onClick={()=>handleClick(i + 1)}>
