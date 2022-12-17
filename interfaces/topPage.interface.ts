@@ -58,7 +58,7 @@ export interface TopPageModel {
   createdAt: Date;
   updatedAt: Date;
   __v: number;
-  hhDatahhData: HhData;
+  hh: HhData;
   qas: any[];
   addresses: any[];
   categoryOn: string;
