@@ -4,10 +4,6 @@
 	gap: 20px;
 }
 
-.logo {
-	margin-top: 34px;
-}
-
 @media (max-width: 765px) {
 	.sidebar {
 		display: none;
