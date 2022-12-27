@@ -7,3 +7,7 @@ export * from "./PTag/PTag";
 export * from "./Rating/Rating";
 export * from "./Sort/Sort";
 export * from "./Tag/Tag";
+export * from "./Textaria/Textaria";
+export * from "./Search/Search";
+export * from "./Product/Product";
+export * from "./Divider/Divider";

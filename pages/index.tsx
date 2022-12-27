@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { withLayout } from "../layout/Layout";
 import axios from "axios";
 import { MenuItem } from "../interfaces/menu.interface";
-import { Input, Htag, Button, Rating } from "../components";
+import { Input, Htag, Button, Rating, Textaria } from "../components";
 
 function Home({ menu }: HomeProps) {
   const [rating, setRating] = useState(3);
@@ -17,7 +17,10 @@ function Home({ menu }: HomeProps) {
       <Button appearance="ghost" arrow="down">
         button
       </Button>
-      <Input />
+      <Input placeholder="test" />
+      <div>
+        <Textaria placeholder="test" />
+      </div>
     </>
   );
 }
