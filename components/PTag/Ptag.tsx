@@ -3,7 +3,7 @@ import { PProps } from "./PTag.props";
 import styles from "./PTag.module.css";
 import cn from "classnames";
 
-const PTag = ({
+export const PTag = ({
   size = "m",
   children,
   className,
@@ -21,5 +21,3 @@ const PTag = ({
     </p>
   );
 };
-
-export default PTag;

@@ -4,7 +4,7 @@ import styles from "./Sort.module.css";
 import SortIcon from "./sort.svg";
 import cn from "classnames";
 
-const Sort = ({
+export const Sort = ({
   sort,
   setSort,
   children,
@@ -32,5 +32,3 @@ const Sort = ({
     </div>
   );
 };
-
-export default Sort;
