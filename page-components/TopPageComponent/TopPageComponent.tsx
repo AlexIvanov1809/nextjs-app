@@ -1,14 +1,10 @@
 import React, { useReducer } from "react";
-import Htag from "../../components/Htag/Htag";
-import Tag from "../../components/Tag/Tag";
 import { TopPageComponentProps } from "./TopPageComponent.props";
 import styles from "./TopPageComponent.module.css";
-import HhData from "../../components/HhData/HhData";
 import { TopLevelCategory } from "../../interfaces/topPage.interface";
-import Advantages from "../../components/Advantages/Advantages";
-import Sort from "../../components/Sort/Sort";
 import { SortEnum } from "../../components/Sort/Sort.props";
 import { sortReducer } from "./sort.reducer";
+import { Advantages, Sort, HhData, Tag, Htag, Product } from "../../components";
 
 const TopPageComponent = ({
   page,
@@ -40,7 +36,7 @@ const TopPageComponent = ({
       </div>
       <div>
         {sortedProducts &&
-          sortedProducts.map((p) => <div key={p._id}>{p.title}</div>)}
+          sortedProducts.map((p) => <Product key={p._id} product={p} />)}
       </div>
       <div className={styles.hhTitle}>
         <Htag tag="h2">Вакансии - {page.category}</Htag>

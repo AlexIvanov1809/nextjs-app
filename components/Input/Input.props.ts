@@ -1,7 +1,7 @@
-import { HtmlHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
+import { InputHTMLAttributes, DetailedHTMLProps } from "react";
 
 export interface InputProps
   extends DetailedHTMLProps<
-    HtmlHTMLAttributes<HTMLInputElement>,
+    InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement
   > {}

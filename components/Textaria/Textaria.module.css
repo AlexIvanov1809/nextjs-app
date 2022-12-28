@@ -1,4 +1,4 @@
-.input {
+.textAria {
 	padding: 7px 15px;
 	color: var(--black);
 	border: none;
@@ -9,8 +9,10 @@
 	font-size: 16px;
 	line-height: 22px;
 	font-family: var(--font-family);
+	width: 100%;
+	resize: none;
 }
 
-.input::placeholder {
+.textAria::placeholder {
 	color: var(--grey);
 }
