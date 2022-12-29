@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	color: var(--black);
 	background-color: #f5f6f8;
+	font-size: 14px;
 	font-family: "Noto Sans", sans-serif;
 }
 
@@ -38,6 +39,7 @@ a {
 	--primary: #7653fc;
 	--primary-hover: #491ef7;
 	--red: #fc836d;
+	--red-light: #fda191;
 	--green: #1dc37e;
 	--green-light: #c8f8e4;
 	--font-family: "Noto Sans", sans-serif;
