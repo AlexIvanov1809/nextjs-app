@@ -40,14 +40,13 @@ const TopPageComponent = ({
       </div>
       <div>
         {sortedProducts &&
-          sortedProducts.map((p) => <Product key={p._id} product={p} />)}
+          sortedProducts.map((p) => <Product key={p._id} product={p} layout />)}
       </div>
       <div className={styles.hhTitle}>
         <Htag tag="h2">Вакансии - {page.category}</Htag>
         <Tag color="red" size="m">
           hh.ru
         </Tag>
-        <span>Sort</span>
       </div>
       {firstCategory === TopLevelCategory.Courses && page.hh && (
         <HhData {...page.hh} />
