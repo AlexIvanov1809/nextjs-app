@@ -3,9 +3,3 @@
 	align-content: flex-start;
 	gap: 20px;
 }
-
-@media (max-width: 857px) {
-	.sidebar {
-		display: none;
-	}
-}

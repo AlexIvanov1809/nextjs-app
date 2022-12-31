@@ -134,8 +134,10 @@
 	margin-bottom: 5px;
 }
 
-.reviewBtn {
-	margin-left: 20px;
+.actions {
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	gap: 20px;
 }
 
 .review {
@@ -254,5 +256,9 @@
 			"advBlock"
 			"hr2"
 			"actions";
+	}
+
+	.actions {
+		grid-template-columns: 1fr;
 	}
 }
