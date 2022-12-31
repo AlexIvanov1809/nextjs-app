@@ -3,6 +3,7 @@ import styles from "./Button.module.css";
 import { ButtonProps } from "./Button.props";
 import ArrowIcon from "./arrow.svg";
 import cn from "classnames";
+import { motion } from "framer-motion";
 
 export const Button = ({
   appearance,
@@ -21,13 +22,13 @@ export const Button = ({
   });
 
   return (
-    <button className={btnStyle} {...props}>
+    <motion.button whileHover={{ scale: 1.05 }} className={btnStyle} {...props}>
       {children}
       {arrow !== "none" && (
         <span className={svgStyle}>
           <ArrowIcon />
         </span>
       )}
-    </button>
+    </motion.button>
   );
 };
