@@ -14,13 +14,16 @@
 	grid-area: header;
 	display: none;
 }
+
 .sidebar {
 	grid-area: sidebar;
 }
+
 .body {
 	grid-area: body;
 	outline: none;
 }
+
 .footer {
 	grid-area: footer;
 }
@@ -39,6 +42,7 @@
 .displayed {
 	height: auto;
 }
+
 @media (max-width: 857px) {
 	.wrapper {
 		grid-template-columns: minmax(320px, 1fr);
@@ -56,6 +60,7 @@
 	.header {
 		display: block;
 	}
+
 	.body {
 		padding: 15px;
 	}
