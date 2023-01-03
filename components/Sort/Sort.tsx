@@ -1,4 +1,4 @@
-import React from "react";
+import React, { KeyboardEvent } from "react";
 import { SortEnum, SortProps } from "./Sort.props";
 import styles from "./Sort.module.css";
 import SortIcon from "./sort.svg";
@@ -21,14 +21,29 @@ export const Sort = ({
 
   return (
     <div className={sortStyle} {...props}>
-      <span onClick={() => setSort(SortEnum.Rating)} className={ratingStyle}>
+      <div className={styles.sortName} id="sort">
+        Сортировка
+      </div>
+      <button
+        id="rating"
+        onClick={() => setSort(SortEnum.Rating)}
+        className={ratingStyle}
+        aria-selected={sort === SortEnum.Rating}
+        aria-labelledby="sort rating"
+      >
         <SortIcon className={styles.sortIcon} />
         По рейтингу
-      </span>
-      <span onClick={() => setSort(SortEnum.Price)} className={priceStyle}>
+      </button>
+      <button
+        id="price"
+        onClick={() => setSort(SortEnum.Price)}
+        className={priceStyle}
+        aria-selected={sort === SortEnum.Price}
+        aria-labelledby="sort price"
+      >
         <SortIcon className={styles.sortIcon} />
         По цене
-      </span>
+      </button>
     </div>
   );
 };

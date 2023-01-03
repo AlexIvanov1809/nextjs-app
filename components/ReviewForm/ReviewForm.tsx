@@ -14,6 +14,7 @@ import { API } from "../../helpers/api";
 
 export const ReviewForm = ({
   productId,
+  isOpened,
   className,
   ...props
 }: ReviewFormProps): JSX.Element => {
@@ -57,6 +58,7 @@ export const ReviewForm = ({
           })}
           error={errors.name}
           placeholder="Имя"
+          tabIndex={isOpened ? 0 : -1}
         />
         <Input
           {...register("title", {
@@ -65,6 +67,7 @@ export const ReviewForm = ({
           error={errors.title}
           className={styles.title}
           placeholder="Заголовок отзыва"
+          tabIndex={isOpened ? 0 : -1}
         />
         <div className={styles.rating}>
           <span>Оценка:</span>
@@ -81,6 +84,7 @@ export const ReviewForm = ({
                 ref={field.ref}
                 setRating={field.onChange}
                 error={errors.rating}
+                tabIndex={isOpened ? 0 : -1}
               />
             )}
           />
@@ -92,9 +96,12 @@ export const ReviewForm = ({
           error={errors.description}
           placeholder="текст отзыва"
           className={styles.description}
+          tabIndex={isOpened ? 0 : -1}
         />
         <div className={styles.submit}>
-          <Button appearance="primary">Отправить</Button>
+          <Button appearance="primary" tabIndex={isOpened ? 0 : -1}>
+            Отправить
+          </Button>
           <span className={styles.info}>
             * Перед публикацией отзыв пройдет предварительную модерацию и
             проверку
