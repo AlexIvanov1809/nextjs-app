@@ -6,4 +6,5 @@ export interface ReviewFormProps
     HTMLDivElement
   > {
   productId: string;
+  isOpened: boolean;
 }

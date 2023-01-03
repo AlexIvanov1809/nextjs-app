@@ -14,7 +14,7 @@ export const Textaria = forwardRef(
     const wrapperStyle = cn(styles.textAriaWrapper, className);
     return (
       <div className={wrapperStyle}>
-        <textarea ref={ref} className={textariaStyle} {...props} />
+        <textarea ref={ref} className={textariaStyle} {...props} role="alert" />
         {error && <span className={styles.errorMessage}>{error.message}</span>}
       </div>
     );
