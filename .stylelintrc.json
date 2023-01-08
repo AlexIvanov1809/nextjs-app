@@ -5,6 +5,9 @@
 	"plugins":["stylelint-order"],
 	"rules": {
 		"indentation":["tab"],
-		"color-hex-case": "upper"
+		"color-hex-case": "upper",
+		"selector-class-pattern": null,
+		"max-line-length": 200,
+		"declaration-block-no-redundant-longhand-properties": null
 	}
 }

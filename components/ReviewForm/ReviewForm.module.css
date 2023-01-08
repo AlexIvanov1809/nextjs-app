@@ -10,6 +10,7 @@
 .description {
 	grid-column: start / end;
 }
+
 .submit {
 	grid-column: start / end;
 }
@@ -27,6 +28,7 @@
 	grid-template-columns: auto 1fr;
 	gap: 20px;
 }
+
 .panel {
 	padding: 20px;
 	position: relative;
@@ -37,6 +39,7 @@
 .error {
 	background-color: var(--red-light);
 }
+
 .success {
 	background-color: var(--green-light);
 }
@@ -70,6 +73,7 @@
 		grid-column: start / end;
 	}
 }
+
 @media screen and (max-width: 640px) {
 	.reviewForm {
 		grid-template-columns: [start] 1fr [end];

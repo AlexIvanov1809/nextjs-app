@@ -1,13 +1,15 @@
 .product {
 	display: grid;
-	grid-template-columns: [start] 70px [logoEnd] 30px [titleStart] calc(50% - 100px) [middle] 1fr [priceStart]auto [priceEnd] 40px [creditStart] auto [creditEnd] 40px [rateStart] auto [end];
+	grid-template-columns: [start] 70px [logoend] 30px [titlestart] calc(50% - 100px) [middle] 1fr [pricestart]auto [priceend] 40px [creditstart] auto [creditend] 40px [ratestart] auto [end];
 	margin-top: 30px;
 	padding: 30px;
 }
+
 .logo {
 	grid-column: start / logoEnd;
 	grid-row: 1 / span 2;
 }
+
 .title,
 .tags {
 	grid-column: titleStart / middle;
@@ -47,6 +49,8 @@
 
 .advBlock {
 	grid-column: middle / end;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .logo img {
@@ -66,6 +70,7 @@
 	line-height: 27px;
 	align-self: flex-end;
 }
+
 .month {
 	font-size: 14px;
 	line-height: 19px;
@@ -78,6 +83,7 @@
 .oldPrice {
 	margin-left: 5px;
 }
+
 .rating {
 	align-self: flex-end;
 }
@@ -96,18 +102,13 @@
 	margin-bottom: 15px;
 }
 
-.advBlock {
-	font-size: 16px;
-	line-height: 22px;
-}
-
 .advTitle {
 	font-weight: 700;
 	margin-bottom: 5px;
 }
 
 .advantages {
-	border-left: 2px solid #1dc37e;
+	border-left: 2px solid #1DC37E;
 	padding-left: 15px;
 	margin-bottom: 20px;
 }
@@ -125,6 +126,7 @@
 	font-size: 16px;
 	line-height: 32px;
 }
+
 .characteristicsName {
 	font-weight: 700;
 }
@@ -160,51 +162,66 @@
 			"hr2 hr2 hr2 hr2 hr2 hr2 hr2"
 			"actions actions actions actions actions actions actions";
 	}
+
 	.logo {
 		grid-area: logo;
 		margin-bottom: 20px;
 	}
+
 	.title {
 		grid-area: title;
 	}
+
 	.tags {
 		grid-area: tags;
 		margin-bottom: 20px;
 	}
+
 	.price {
 		grid-area: price;
 	}
+
 	.credit {
 		grid-area: credit;
 	}
+
 	.rating {
 		grid-area: rating;
 	}
+
 	.priceTitle {
 		grid-area: priceTitle;
 	}
+
 	.creditTitle {
 		grid-area: creditTitle;
 	}
+
 	.rateTitle {
 		grid-area: rateTitle;
 	}
+
 	.hr {
 		grid-area: hr;
 	}
+
 	.hr2 {
 		grid-area: hr2;
 	}
+
 	.description {
 		grid-area: description;
 	}
+
 	.feature {
 		grid-area: feature;
 		margin-bottom: 20px;
 	}
+
 	.advBlock {
 		grid-area: advBlock;
 	}
+
 	.actions {
 		grid-area: actions;
 	}
@@ -226,12 +243,15 @@
 			"hr2 hr2 hr2"
 			"actions actions actions";
 	}
+
 	.price {
 		margin-bottom: 10px;
 	}
+
 	.credit {
 		margin-bottom: 10px;
 	}
+
 	.rating {
 		margin-bottom: 10px;
 	}
